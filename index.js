@@ -15,6 +15,6 @@ api.get("/all", (req, res) => {
 
 })
 
-api.listen("8080", () => {
-    console.log("Api  listen on http://localhost:8080")
-})
+api.listen(process.env.PORT || 8080, () => {
+  console.log("Api  listen on http://localhost:8080");
+});
